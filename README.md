@@ -1,33 +1,32 @@
-# netflix_Stock_Data
-This project scrapes daily stock data for Netflix from a webpage and stores it in a pandas DataFrame.
+# Netflix Stock Data Scraper
 
-Features
-Extracts data for the following columns: Date, Open, High, Low, Close, Adj Close, Volume.
-Creates a pandas DataFrame to organize the extracted data.
-Prints the first few rows of the DataFrame for initial inspection.
-Requirements
-Python 3.x
-pandas library (pip install pandas)
-requests library (pip install requests)
-beautifulsoup4 library (pip install beautifulsoup4)
-Usage
-Clone or download this repository.
-Install the required libraries using pip install pandas requests beautifulsoup4.
-Run the script using python netflix_stock_scraper.py (replace with your actual script name).
-The output will display the first few rows of the extracted Netflix stock data.
-Note: This script relies on a specific webpage structure and might need adjustments if the HTML structure changes.
+**Purpose:**
+This Jupyter Notebook scrapes daily stock data for Netflix from a webpage and stores it in a pandas DataFrame.
 
-How it Works
-The script imports necessary libraries (pandas, requests, BeautifulSoup).
-It defines a URL pointing to the webpage containing Netflix stock data.
-It uses requests to fetch the webpage content and parses it with BeautifulSoup.
-It creates an empty pandas DataFrame with the desired columns.
-It iterates through each table row (tr) within the webpage's tbody element.
-Within each row, it extracts data for individual columns ("Date", "Open", ..., "Volume").
-It appends a new row containing the extracted data to the pandas DataFrame.
-Finally, the script prints the first few rows of the DataFrame for initial inspection.
-Disclaimer
-This script is for educational purposes only and may not be suitable for commercial use. The data source might not be guaranteed to be complete or accurate. Always refer to official sources for reliable financial information.
+**Requirements:**
+* Python 3.x
+* pandas library (`pip install pandas`)
+* requests library (`pip install requests`)
+* beautifulsoup4 library (`pip install beautifulsoup4`)
 
-Contribution
-We welcome contributions to this project. Feel free to submit pull requests for improvements or bug fixes.
+**Usage:**
+1. Install the required libraries using `pip install pandas requests beautifulsoup4`.
+2. Run this Jupyter Notebook.
+3. The output will display the first few rows of the extracted Netflix stock data.
+
+**How it Works:**
+1. Imports necessary libraries.
+2. Defines a URL pointing to the webpage containing Netflix stock data.
+3. Fetches the webpage content using `requests` and parses it with BeautifulSoup.
+4. Creates an empty pandas DataFrame.
+5. Iterates through each table row (`tr`) within the webpage's `tbody` element.
+6. Extracts data for individual columns ("Date", "Open", ..., "Volume").
+7. Appends a new row containing the extracted data to the DataFrame.
+8. Prints the first few rows of the DataFrame.
+
+**Note:**
+* This script relies on a specific webpage structure and might need adjustments if the HTML changes.
+* This script is for educational purposes only and may not be suitable for commercial use.
+
+**Disclaimer:**
+The data source might not be guaranteed to be complete or accurate. Always refer to official sources for reliable financial information.
